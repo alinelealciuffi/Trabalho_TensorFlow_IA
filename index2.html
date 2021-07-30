@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset='uft-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>Reconhecendo Talheres Teachable Machine</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+			<style type="text/css">
+			
+			</style>
+		</head>
+		<body>
+		
+				 <div class="container" style="text-align: center; border-style: solid; background-color: #bde6b6;"> <!-- DIV PRINCIPAL  -->
+					<header class="jumbotron" style="background-color:#2f9e41; color: white;">
+						<h1> Reconhecendo Talheres com Teachable Machine</h1>
+						<p> Campus Machado </p>
+						</header>
+						
+						<!-- DIV DO CODIGO DO TEACHABLE Machine  -->
+						<h3>Clique para começar o reconhecimento utilizando redes neurais</h3>
+						<div class="alert alert-info" role="alert"> <!-- peguei no site do bootstrap para criar alerta da webcam -->
+							Lembre-se de autorizar o uso de sua webcam!
+						</div>
+						<button type="button" class="btn btn-success" onclick="init()">Iniciar</button>
+						<p></p>
+						<div id="webcam-container"></div>
+						<div id="label-container"></div>
+						
+					
+						<footer class="panel-footer" style="text-align: center; background-color: #2f9e41;"> <!-- RODAPE -->
+						Todos os direitos reservados - Departamento de Computação - IFSULDEMINAS - CAMPUS Machado 
+						<p>Por Aline Leal Ciuffi</p>
+				
+						</footer>
+				
+				</div>
+				
+				<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+				<script src="tensor.js"></script>
+				
+				
+		</body>
+		</html>
+		
